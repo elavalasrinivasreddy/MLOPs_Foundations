@@ -14,10 +14,10 @@ list_files = [
     "src/pipeline/__init__.py",
     "src/pipeline/training_pipeline.py",
     "src/pipeline/prediction_pipeline.py",
-    "src/utils/__init__.py"
+    "src/utils/__init__.py",
     "src/utils/utils.py",
     "src/logger/logging.py",
-    "src/exceptions/exception"
+    "src/exceptions/exception.py",
     "test/unit/__init__.py",
     "test/integration/__init__.py",
     "init_setup.sh",
@@ -27,11 +27,11 @@ list_files = [
     "setup.cfg",
     "pyproject.toml",
     "tox.ini",
-    "experiment/experiments.ipynb"
+    "experiment/experiments.ipynb",
 ]
 
 for filepath in list_files:
-    # changing the path slashes
+    # converting to system comfortable path
     filepath = Path(filepath)
     # extracting directory and file names
     file_dir, file_name = os.path.split(filepath)
